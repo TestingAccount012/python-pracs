@@ -3,6 +3,27 @@
 
 #MODULES
 import math
+import os
+
+#GLOBAL VARIABLES
+spacer = '______________________________________________________'
+dict = [
+	"1) Calculate final velocity based on initial velocity, acceleration, and time.",
+	"2) Find the total surface area and volume of a cylinder given its radius and height.",
+	"3) Determine if an integer is odd or even.",
+	"4) Check if three given sides can form a triangle and calculate its perimeter and area.",
+	"5) Determine if a given year is a leap year.",
+	"6) Display the sum of natural numbers up to a given number.",
+	"7) Find the factorial of a positive integer.",
+	"8) Display a series of numbers increasing by 3 starting from 1 up to a given number.",
+	"9) Find the sum of digits in a positive integer.",
+	"10) Display numbers within a given range divisible by 3 or 5.",
+	"11) Convert a string to lowercase if it's in uppercase.",
+	"12) Check if concatenating two strings in different orders results in the same string.",
+	"13) Count odd and even numbers in a given list.",
+	"14) Find the sum of all numerical values in a given list.",
+	"15) Modify a list of integers: divide even numbers by 2, multiply odd numbers by 2."
+]
 
 #______________________________________________________________#
 def prac1():
@@ -117,51 +138,71 @@ def prac15():
 		else:
 			arr[i]=arr[i]*2
 	print(f"Modified : {arr}")
+
 #______________________________________________________________#
 
-runner = int(input("Serial number of practical to run : "))
-if runner == 1:
-	print("Running : V=U/T.")
-	prac1()
-elif runner ==2:
-	print("Running : Volume, Surface area.")
-	prac2()
-elif runner ==3:
-	print("Running : Odd/Even.")
-	prac3()
-elif runner ==4:
-	print("Running : 3 Sides = Triangle or not.")
-	prac4()
-elif runner ==5:
-	print("Running : Leap year or not.")
-	prac5()
-elif runner ==6:
-	print("Running : Sum of all numbers till n.")
-	prac6()
-elif runner ==7:
-	print("Running : Factorial.")
-	prac7()
-elif runner ==8:
-	print("Running : AP/Series.")
-	prac8()
-elif runner ==9:
-	print("Running : Sum of all its digits.")
-	prac9()
-elif runner ==10:
-	print("Running : Divisible by 3,5.")
-	prac10()
-elif runner ==11:
-	print("Running : uppercase/lowercase.")
-	prac11()
-elif runner ==12:
-	print("Running : s1+s2=s2+s1.")
-	prac12()
-elif runner ==13:
-	print("Running : Number of odd and even numbers [].")
-	prac13()
-elif runner ==14:
-	print("Running : sum of a list's elements.")
-	prac14()
-elif runner ==15:
-	print("Running : If odd => *2. If even => /2.")
-	prac15()
+while True:
+	print(f"{spacer}\n\n\n")
+	for i in range(len(dict)):
+		print({dict[i]}, end="\n")
+	scriptRunner = int(input(f"{spacer}\n\n\nSerial number of practical to run : "))
+	if scriptRunner ==  1:
+		os.system('cls')
+		print("\n\nNow running : V=U/T.")
+		prac1()
+	elif scriptRunner == 2:
+		os.system('cls')
+		print("\n\nNow running : Cylinder=> Surface area, Volume.")
+		prac2()
+	elif scriptRunner == 3:
+		os.system('cls')
+		print("\n\nNow running : Odd/Even.")
+		prac3()
+	elif scriptRunner == 4:
+		os.system('cls')
+		print("\n\nNow running : 3 Sides = Triangle or not.")
+		prac4()
+	elif scriptRunner == 5:
+		os.system('cls')
+		print("\n\nNow running : Leap year or not.")
+		prac5()
+	elif scriptRunner == 6:
+		os.system('cls')
+		print("\n\nNow running : Sum of all numbers till n.")
+		prac6()
+	elif scriptRunner == 7:
+		os.system('cls')
+		print("\n\nNow running : Factorial.")
+		prac7()
+	elif scriptRunner == 8:
+		os.system('cls')
+		print("\n\nNow running : AP/Series.")
+		prac8()
+	elif scriptRunner == 9:
+		os.system('cls')
+		print("\n\nNow running : Sum of all its digits.")
+		prac9()
+	elif scriptRunner == 10:
+		os.system('cls')
+		print("\n\nNow running : Divisible by 3,5.")
+		prac10()
+	elif scriptRunner == 11:
+		os.system('cls')
+		print("\n\nNow running : uppercase/lowercase.")
+		prac11()
+	elif scriptRunner == 12:
+		os.system('cls')
+		print("\n\nNow running : s1+s2=s2+s1.")
+		prac12()
+	elif scriptRunner == 13:
+		os.system('cls')
+		print("\n\nNow running : Number of odd and even numbers [].")
+		prac13()
+	elif scriptRunner == 14:
+		os.system('cls')
+		print("\n\nNow running : sum of a list's elements.")
+		prac14()
+	elif scriptRunner == 15:
+		os.system('cls')
+		print("\n\nNow running : If odd => *2. If even => /2.")
+		prac15()
