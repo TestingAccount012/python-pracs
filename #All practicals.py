@@ -7,23 +7,7 @@ import os
 
 #GLOBAL VARIABLES
 spacer = '______________________________________________________'
-dict = [
-	"1) Calculate final velocity based on initial velocity, acceleration, and time.",
-	"2) Find the total surface area and volume of a cylinder given its radius and height.",
-	"3) Determine if an integer is odd or even.",
-	"4) Check if three given sides can form a triangle and calculate its perimeter and area.",
-	"5) Determine if a given year is a leap year.",
-	"6) Display the sum of natural numbers up to a given number.",
-	"7) Find the factorial of a positive integer.",
-	"8) Display a series of numbers increasing by 3 starting from 1 up to a given number.",
-	"9) Find the sum of digits in a positive integer.",
-	"10) Display numbers within a given range divisible by 3 or 5.",
-	"11) Convert a string to lowercase if it's in uppercase.",
-	"12) Check if concatenating two strings in different orders results in the same string.",
-	"13) Count odd and even numbers in a given list.",
-	"14) Find the sum of all numerical values in a given list.",
-	"15) Modify a list of integers: divide even numbers by 2, multiply odd numbers by 2."
-]
+dict = "1) Calculate final velocity based on initial velocity, acceleration, and time.\n2) Find the total surface area and volume of a cylinder given its radius and height.\n3) Determine if an integer is odd or even.\n4) Check if three given sides can form a triangle and calculate its perimeter and area.\n5) Determine if a given year is a leap year.\n6) Display the sum of natural numbers up to a given number.\n7) Find the factorial of a positive integer.\n8) Display a series of numbers increasing by 3 starting from 1 up to a given number.\n9) Find the sum of digits in a positive integer.\n10) Display numbers within a given range divisible by 3 or 5.\n11) Convert a string to lowercase if it's in uppercase.\n12) Check if concatenating two strings in different orders results in the same string.\n13) Count odd and even numbers in a given list.\n14) Find the sum of all numerical values in a given list.\n15) Modify a list of integers: divide even numbers by 2, multiply odd numbers by 2."
 
 #______________________________________________________________#
 def prac1():
@@ -142,9 +126,7 @@ def prac15():
 #______________________________________________________________#
 
 while True:
-	print(f"{spacer}\n\n\n")
-	for i in range(len(dict)):
-		print({dict[i]}, end="\n")
+	print(f"{spacer}\n\n\n{dict}\n\n")
 	scriptRunner = int(input(f"{spacer}\n\n\nSerial number of practical to run : "))
 	if scriptRunner ==  1:
 		os.system('cls')
